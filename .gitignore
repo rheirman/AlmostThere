@@ -1,0 +1,4 @@
+*.vs
+Source/SearcAndDestroy/.vs/*
+Source/SearchAndDestroy/obj/*
+1.1/Source/SearchAndDestory/obj/*

@@ -1,19 +1,21 @@
 ﻿using HugsLib;
 using HugsLib.Utils;
-using SearchAndDestroy.Storage;
+using AlmostThere.Storage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Verse;
+using HugsLib.Settings;
 
-namespace SearchAndDestroy
+namespace AlmostThere
 {
-    class Base : ModBase
+    public class Base : ModBase
     {
         public override string ModIdentifier => "AlmostThere";
         public static Base Instance { get; private set; }
         private ExtendedDataStorage _extendedDataStorage;
+        internal static SettingHandle<int> almostThereHours;
 
         public Base()
         {
@@ -30,6 +32,12 @@ namespace SearchAndDestroy
                 _extendedDataStorage = Find.World.GetComponent<ExtendedDataStorage>();
             }
             base.WorldLoaded();
+        }
+
+        public override void DefsLoaded()
+        {
+            almostThereHours = Settings.GetHandle<int>("AlmostThereHours", "AT_AlmostThereHours_Title".Translate(), "AT_AlmostThereHours_Desciption".Translate(), 4, Validators.IntRangeValidator(0, 1000));
+            base.DefsLoaded();
         }
     }
 

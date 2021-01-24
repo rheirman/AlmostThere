@@ -6,7 +6,7 @@ using HugsLib.Utils;
 using RimWorld.Planet;
 using Verse;
 
-namespace SearchAndDestroy.Storage
+namespace AlmostThere.Storage
 {
 
 

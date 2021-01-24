@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<AT_AlmostThereHours_Title>Almost there hours</AT_AlmostThereHours_Title>
+	<AT_AlmostThereHours_Description>Set how many hours away a target has to be for "Almost there" to trigger.</AT_AlmostThereHours_Description>
+	<AT_Command_DontRest_Label>Never rest</AT_Command_DontRest_Label>
+	<AT_Command_DontRest_Description>Turning this on will prevent the caravan from ever resting. Use at your own risk!</AT_Command_DontRest_Description>
+	<AT_Command_AlmostThere_Label>Almost there!</AT_Command_AlmostThere_Label>
+	<AT_Command_AlmostThere_Description>Cmon guys, we're almost there! With this enabled, your caravan won't rest when {0} hours away from its target.</AT_Command_AlmostThere_Description>
+	<AT_Command_ForceRest_Title>Force rest</AT_Command_ForceRest_Title>
+	<AT_Command_ForceRest_Description>Turning this on will force the caravan to rest. Turn it off to let them stop resting again.</AT_Command_ForceRest_Description>
+</LanguageData>

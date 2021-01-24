@@ -7,8 +7,8 @@
     <ProjectGuid>{EB0FDC31-0570-42FC-A3C9-3E9248B62858}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SearchAndDestroy</RootNamespace>
-    <AssemblyName>SearchAndDestroy</AssemblyName>
+    <RootNamespace>AlmostThere</RootNamespace>
+    <AssemblyName>AlmostThere</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -154,8 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base.cs" />
-    <Compile Include="Harmony\Pawn_DraftController.cs" />
-    <Compile Include="Harmony\Pawn_JobTracker.cs" />
+    <Compile Include="Harmony\Caravan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Storage\ExtendedDataStorage.cs" />
     <Compile Include="Storage\ExtendedCaravanData.cs" />
@@ -163,5 +162,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

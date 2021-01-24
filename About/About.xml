@@ -3,8 +3,6 @@
 	<name>Almost There!</name>
 	<author>Roolo</author>
 	<supportedVersions>
-      <li>1.0</li>
-      <li>1.1</li>
       <li>1.2</li>
    </supportedVersions>
 	<modDependencies>
@@ -16,6 +14,15 @@
     </modDependencies>
 	<packageId>roolo.AlmostThere</packageId>
 	<description>
+Cmon guys, we're almost there!
+Nah, it's sleepy time. 
+But the colony is literally just one hour away, and Gonzalez really needs the medicines we brought, otherwise he'll die!
+Meh, when it's nap time, it's nap time.
+
+Sounds familiar? Then this mod is for you. It adds three things buttons to your caravans: 
+- An "Almost there" button - when your caravan is only x hours away from its goal, it won't stop for resting. 
+- A "Never rest" button. For those that like to have their pawns suffer. 
+- A "Force rest" button. Lets the caravan stop and rest immediately. 
 
 	</description>	
 </ModMetaData>

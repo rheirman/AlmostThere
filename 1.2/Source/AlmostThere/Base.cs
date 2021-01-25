@@ -17,6 +17,8 @@ namespace AlmostThere
         private ExtendedDataStorage _extendedDataStorage;
         internal static SettingHandle<int> almostThereHours;
 
+        public bool cachedResult = false;
+
         public Base()
         {
             Instance = this;
@@ -36,7 +38,7 @@ namespace AlmostThere
 
         public override void DefsLoaded()
         {
-            almostThereHours = Settings.GetHandle<int>("AlmostThereHours", "AT_AlmostThereHours_Title".Translate(), "AT_AlmostThereHours_Desciption".Translate(), 4, Validators.IntRangeValidator(0, 1000));
+            almostThereHours = Settings.GetHandle<int>("AlmostThereHours", "AT_AlmostThereHours_Title".Translate(), "AT_AlmostThereHours_Description".Translate(), 4, Validators.IntRangeValidator(0, 1000));
             base.DefsLoaded();
         }
     }

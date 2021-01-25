@@ -16,10 +16,13 @@ namespace SearchAndDestroy.Harmony
     [HarmonyPatch(typeof(Caravan), "get_NightResting")]
     class Caravan_get_NightResting
     {
-        private static float nHours = 5f;
-        static bool Prefix(Caravan __instance, ref bool __result)
+        static void Postfix(Caravan __instance, ref bool __result)
         {
-
+            if (!__instance.IsHashIntervalTick(60))
+            {
+                __result = Base.Instance.cachedResult;
+                return;
+            }
             if(Base.Instance.GetExtendedDataStorage() is ExtendedDataStorage store)
             {
                 if (store.GetExtendedDataFor(__instance) is ExtendedCaravanData data)
@@ -27,26 +30,25 @@ namespace SearchAndDestroy.Harmony
                     if (data.forceRest)
                     {
                         __result = true;
-                        return false;
+                        
                     }
                     if (data.fullyIgnoreRest)
                     {
-                        return false;
+                        __result = false;
                     }
                     if (data.almostThere)
                     {
-                        var estimatedTicks = (float)CaravanArrivalTimeEstimator.EstimatedTicksToArrive(__instance, allowCaching: false);
+                        var estimatedTicks = (float)CaravanArrivalTimeEstimator.EstimatedTicksToArrive(__instance, allowCaching: true);
                         var restTicksLeft = CaravanNightRestUtility.LeftRestTicksAt(__instance.Tile, Find.TickManager.TicksAbs);
                         estimatedTicks -= restTicksLeft;
                         if (estimatedTicks/GenDate.TicksPerHour < Base.almostThereHours.Value)
                         {
-                            return false;
+                            __result = false;
                         }
                     }
                 }
             }
-            return true;
-
+            Base.Instance.cachedResult = __result;
         }
     }
 

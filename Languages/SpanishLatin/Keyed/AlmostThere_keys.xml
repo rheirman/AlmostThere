@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<AT_AlmostThereHours_Title>Horarios para "Almost there"</AT_AlmostThereHours_Title>
+	<AT_AlmostThereHours_Description>Establece el número de horas a las que se debe estar del objetivo para que se active "Almost there".</AT_AlmostThereHours_Description>
+	<AT_Command_DontRest_Label>Nunca descansar</AT_Command_DontRest_Label>
+	<AT_Command_DontRest_Description>Si se activa, la caravana nunca podrá descansar. ¡Utilízalo bajo tu propio riesgo!</AT_Command_DontRest_Description>
+	<AT_Command_AlmostThere_Label>Almost there!</AT_Command_AlmostThere_Label>
+	<AT_Command_AlmostThere_Description>Vamos gente, ¡ya casi llegamos! Con esto activado, la caravana no descansará cuando esté a menos de {0} horas de su objetivo. NOTA: el número de horas consideradas por "almost there" debe configurarse en ajustes de mod.</AT_Command_AlmostThere_Description>
+	<AT_Command_ForceRest_Title>Obligar a dormir</AT_Command_ForceRest_Title>
+	<AT_Command_ForceRest_Description>Al activar esta función, los miembros de la caravana se verán obligados a dormir. Ten en cuenta que esto es diferente de la función de descanso por defecto de las caravanas, ya que con ese sólo recogen bayas y hacen otras cosas en vez de dormir.</AT_Command_ForceRest_Description>
+</LanguageData>

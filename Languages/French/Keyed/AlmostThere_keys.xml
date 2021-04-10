@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<AT_AlmostThereHours_Title>Presque arrivé (Heures)</AT_AlmostThereHours_Title>
+	<AT_AlmostThereHours_Description>Définissez à quelle distance de la cible en heures "Presque arrivé" doit se déclencher.</AT_AlmostThereHours_Description>
+	<AT_Command_DontRest_Label>Pas de repos</AT_Command_DontRest_Label>
+	<AT_Command_DontRest_Description>L'activer empêchera la caravane de se reposer. À utiliser à vos risques et périls!</AT_Command_DontRest_Description>
+	<AT_Command_AlmostThere_Label>Presque arrivé !</AT_Command_AlmostThere_Label>
+	<AT_Command_AlmostThere_Description>Allez les gars, nous y sommes presque! Lorsque cette option est activée, votre caravane ne se reposera pas à {0} heures de son objectif. NOTE: le nombre d'heures considéré comme "presque arrivé" peut être configuré dans les paramètres du mod.</AT_Command_AlmostThere_Description>
+	<AT_Command_ForceRest_Title>Forcer le sommeil</AT_Command_ForceRest_Title>
+	<AT_Command_ForceRest_Description>L'activer forcera les colons de votre caravane à dormir. Notez que cela est différent de la fonction de repos, car avec cela, vos colons cueillent des baies et font d'autres choses au lieu de se reposer réellement.</AT_Command_ForceRest_Description>
+</LanguageData>

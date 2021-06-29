@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace SearchAndDestroy.Harmony
+namespace AlmostThere.Harmony
 {
     [HarmonyPatch(typeof(Caravan), "get_NightResting")]
     class Caravan_get_NightResting
